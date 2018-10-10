@@ -1,4 +1,7 @@
 /.idea/
 /snowprints.iml
 /target/
+/resources/public/js/compiled/
 /.lein-repl-history
+/.rebel_readline_history
+/figwheel_server.log
