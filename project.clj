@@ -1,4 +1,5 @@
-(defproject org.yotsov/snowprints ""
+(defproject org.yotsov/snowprints "snapshot"
+
   ; lein -v -> Leiningen 2.8.1 on Java 1.8.0_51 Java HotSpot(TM) 64-Bit Server VM
   :dependencies [; backend
                  [org.clojure/clojure "1.9.0"]
@@ -10,6 +11,7 @@
                  [reagent "0.8.1"]
                  [haslett "0.1.2"]
                  [figwheel "0.5.16"]]
+  ; check for dep. conflicts -> lein deps :tree; rm pom.xml; lein pom; mvn dependency:tree -Dverbose=true
 
   :plugins [[lein-figwheel "0.5.16"]
             [lein-cljsbuild "1.1.7"]]
@@ -34,5 +36,5 @@
   :aot :all
   :main snowprints.backend
   ; dev  -> rm -rf target; (echo "(start-jetty false)"; cat <&0) | lein repl
-  ; prod -> rm -rf target; lein uberjar; java -Xms1G -Xmx1G -jar target/snowprints--standalone.jar
+  ; prod -> rm -rf target; lein uberjar; java -Xms1G -Xmx1G -jar target/snowprints-snapshot-standalone.jar
 )
