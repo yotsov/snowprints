@@ -3,11 +3,12 @@
   :dependencies [; backend
                  [org.clojure/clojure "1.9.0"]
                  [compojure "1.6.1"]
-                 [ring/ring-jetty-adapter "1.6.3"]
+                 [info.sunng/ring-jetty9-adapter "0.12.0"]
 
                  ; frontend
                  [org.clojure/clojurescript "1.10.339"]
                  [reagent "0.8.1"]
+                 [haslett "0.1.2"]
                  [figwheel "0.5.16"]]
 
   :plugins [[lein-figwheel "0.5.16"]
